@@ -3,8 +3,8 @@ package cn.jiguang.jshare_flutter_plugin;
 import java.util.Map;
 
 import cn.jiguang.share.android.api.Platform;
-import cn.jiguang.share.facebook.Facebook;
-import cn.jiguang.share.facebook.messenger.FbMessenger;
+//import cn.jiguang.share.facebook.Facebook;
+//import cn.jiguang.share.facebook.messenger.FbMessenger;
 import cn.jiguang.share.qqmodel.QQ;
 import cn.jiguang.share.qqmodel.QZone;
 import cn.jiguang.share.twitter.Twitter;
@@ -79,8 +79,8 @@ public class JShareMessage {
             case "qZone": platform = QZone.Name; break;
             case "sinaWeibo": platform = SinaWeibo.Name; break;
             case "sinaWeiboContact": platform = SinaWeiboMessage.Name; break;
-            case "facebook": platform = Facebook.Name; break;
-            case "facebookMessenger": platform = FbMessenger.Name; break;
+//            case "facebook": platform = Facebook.Name; break;
+//            case "facebookMessenger": platform = FbMessenger.Name; break;
             case "twitter": platform = Twitter.Name; break;
             default:
                 platform = null;

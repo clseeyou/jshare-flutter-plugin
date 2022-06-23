@@ -104,8 +104,8 @@ public class JshareFlutterPlugin implements FlutterPlugin, MethodCallHandler {
         String sinaWeiboAppKey = call.argument("sinaWeiboAppKey");
         String sinaWeiboAppSecret = call.argument("sinaWeiboAppSecret");
         String sinaRedirectUri = call.argument("sinaRedirectUri");
-        String facebookAppID = call.argument("facebookAppID");
-        String facebookDisplayName = call.argument("facebookDisplayName");
+//        String facebookAppID = call.argument("facebookAppID");
+//        String facebookDisplayName = call.argument("facebookDisplayName");
         String twitterConsumerKey = call.argument("twitterConsumerKey");
         String twitterConsumerSecret = call.argument("twitterConsumerSecret");
 
@@ -116,7 +116,7 @@ public class JshareFlutterPlugin implements FlutterPlugin, MethodCallHandler {
         platformConfig.setWechat(weChatAppId, weChatAppSecret);
         platformConfig.setQQ(qqAppId, qqAppKey);
         platformConfig.setSinaWeibo(sinaWeiboAppKey, sinaWeiboAppSecret, sinaRedirectUri);
-        platformConfig.setFacebook(facebookAppID, facebookDisplayName);
+//        platformConfig.setFacebook(facebookAppID, facebookDisplayName);
         platformConfig.setTwitter(twitterConsumerKey, twitterConsumerSecret);
 
         JShareInterface.init(context, platformConfig);
