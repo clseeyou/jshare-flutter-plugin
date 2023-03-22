@@ -5,14 +5,14 @@ import java.util.Map;
 import cn.jiguang.share.android.api.Platform;
 //import cn.jiguang.share.facebook.Facebook;
 //import cn.jiguang.share.facebook.messenger.FbMessenger;
-import cn.jiguang.share.qqmodel.QQ;
-import cn.jiguang.share.qqmodel.QZone;
-import cn.jiguang.share.twitter.Twitter;
+//import cn.jiguang.share.qqmodel.QQ;
+//import cn.jiguang.share.qqmodel.QZone;
+//import cn.jiguang.share.twitter.Twitter;
 import cn.jiguang.share.wechat.Wechat;
 import cn.jiguang.share.wechat.WechatFavorite;
 import cn.jiguang.share.wechat.WechatMoments;
-import cn.jiguang.share.weibo.SinaWeibo;
-import cn.jiguang.share.weibo.SinaWeiboMessage;
+//import cn.jiguang.share.weibo.SinaWeibo;
+//import cn.jiguang.share.weibo.SinaWeiboMessage;
 
 /**
  * Create by wangqingqing
@@ -32,7 +32,7 @@ public class JShareMessage {
     String fileDataPath;
     String fileExt ;
     String emoticonDataPath ;
-    String sinaObjectID ;
+//    String sinaObjectID ;
     String miniProgramUserName ;
     String miniProgramPath ;
     int miniProgramType ;
@@ -54,7 +54,7 @@ public class JShareMessage {
         fileDataPath = (String)argument.get("fileDataPath");
         fileExt = (String)argument.get("fileExt");
         emoticonDataPath = (String)argument.get("emoticonDataPath");
-        sinaObjectID = (String)argument.get("sinaObjectID");
+//        sinaObjectID = (String)argument.get("sinaObjectID");
         miniProgramUserName = (String)argument.get("miniProgramUserName");
         miniProgramPath = (String)argument.get("miniProgramPath");
         miniProgramType = (int)argument.get("miniProgramType");
@@ -75,13 +75,13 @@ public class JShareMessage {
             case "wechatSession": platform = Wechat.Name; break;
             case "wechatTimeLine": platform = WechatMoments.Name; break;
             case "wechatFavourite": platform = WechatFavorite.Name; break;
-            case "qq": platform = QQ.Name; break;
-            case "qZone": platform = QZone.Name; break;
-            case "sinaWeibo": platform = SinaWeibo.Name; break;
-            case "sinaWeiboContact": platform = SinaWeiboMessage.Name; break;
+//            case "qq": platform = QQ.Name; break;
+//            case "qZone": platform = QZone.Name; break;
+//            case "sinaWeibo": platform = SinaWeibo.Name; break;
+//            case "sinaWeiboContact": platform = SinaWeiboMessage.Name; break;
 //            case "facebook": platform = Facebook.Name; break;
 //            case "facebookMessenger": platform = FbMessenger.Name; break;
-            case "twitter": platform = Twitter.Name; break;
+//            case "twitter": platform = Twitter.Name; break;
             default:
                 platform = null;
                 break;

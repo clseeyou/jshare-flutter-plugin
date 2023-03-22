@@ -99,25 +99,25 @@ public class JshareFlutterPlugin implements FlutterPlugin, MethodCallHandler {
         String appKey = call.argument("appKey");
         String weChatAppId = call.argument("weChatAppId");
         String weChatAppSecret = call.argument("weChatAppSecret");
-        String qqAppId = call.argument("qqAppId");
-        String qqAppKey = call.argument("qqAppKey");
-        String sinaWeiboAppKey = call.argument("sinaWeiboAppKey");
-        String sinaWeiboAppSecret = call.argument("sinaWeiboAppSecret");
-        String sinaRedirectUri = call.argument("sinaRedirectUri");
+//        String qqAppId = call.argument("qqAppId");
+//        String qqAppKey = call.argument("qqAppKey");
+//        String sinaWeiboAppKey = call.argument("sinaWeiboAppKey");
+//        String sinaWeiboAppSecret = call.argument("sinaWeiboAppSecret");
+//        String sinaRedirectUri = call.argument("sinaRedirectUri");
 //        String facebookAppID = call.argument("facebookAppID");
 //        String facebookDisplayName = call.argument("facebookDisplayName");
-        String twitterConsumerKey = call.argument("twitterConsumerKey");
-        String twitterConsumerSecret = call.argument("twitterConsumerSecret");
+//        String twitterConsumerKey = call.argument("twitterConsumerKey");
+//        String twitterConsumerSecret = call.argument("twitterConsumerSecret");
 
 
         JShareInterface.setDebugMode(isDebug);
 
         PlatformConfig platformConfig = new PlatformConfig();
         platformConfig.setWechat(weChatAppId, weChatAppSecret);
-        platformConfig.setQQ(qqAppId, qqAppKey);
-        platformConfig.setSinaWeibo(sinaWeiboAppKey, sinaWeiboAppSecret, sinaRedirectUri);
+//        platformConfig.setQQ(qqAppId, qqAppKey);
+//        platformConfig.setSinaWeibo(sinaWeiboAppKey, sinaWeiboAppSecret, sinaRedirectUri);
 //        platformConfig.setFacebook(facebookAppID, facebookDisplayName);
-        platformConfig.setTwitter(twitterConsumerKey, twitterConsumerSecret);
+//        platformConfig.setTwitter(twitterConsumerKey, twitterConsumerSecret);
 
         JShareInterface.init(context, platformConfig);
     }
